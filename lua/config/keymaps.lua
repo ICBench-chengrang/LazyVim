@@ -2,7 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- local keymap = vim.keymap
--- keymap.set({ "i", "n" }, "<C-o>", "", { silent = true, remap = false })
--- keymap.set("i", "<C-o>", "<Esc>")
--- keymap.set("n", "<C-o><C-o>", ":w<CR>", { silent = true, remap = false })
+local keymap = vim.keymap
+keymap.set("i", "<C-l>", "<Right>")
+
+keymap.set({ "i", "v" }, "<C-k>", "<esc>", { silent = true, remap = false })
+keymap.set("n", "<C-k><C-k>", "<cmd>w<cr>", { silent = true, remap = false })
