@@ -5,5 +5,5 @@
 local keymap = vim.keymap
 keymap.set("i", "<C-l>", "<Right>")
 
-keymap.set({ "i", "v" }, "<C-k>", "<esc>", { silent = true, remap = false })
+-- keymap.set({ "i", "v" }, "<C-k>", "<esc>l", { silent = true, remap = false })
 keymap.set("n", "<C-k><C-k>", "<cmd>w<cr>", { silent = true, remap = false })
