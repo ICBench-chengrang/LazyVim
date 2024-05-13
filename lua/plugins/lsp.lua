@@ -7,7 +7,7 @@ return {
       -- disable a keymap
       keys[#keys + 1] = { "<C-k>", mode = "i", false }
       -- change a keymap
-      keys[#keys + 1] = { "<C-k>", mode = "i", "<esc>l" }
+      keys[#keys + 1] = { "<C-k>", mode = { "i", "x", "s" }, "<esc>l", remap = false, silent = true }
       -- add a keymap
       keys[#keys + 1] = { "<C-j>", mode = { "i", "n" }, "<cmd>lua vim.lsp.buf.signature_help()<cr>" }
     end,
